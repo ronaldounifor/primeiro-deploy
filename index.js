@@ -6,6 +6,11 @@ app.get("/", function(req,res){
     }
 )
 
+app.get("/teste", function(req,res){
+    res.send("OUTRO TESTE!");
+}
+)
+
 app.listen(4000, function(erro){
     if(erro){
         console.log("Erro ao iniciar");
